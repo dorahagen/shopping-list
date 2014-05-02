@@ -23,6 +23,21 @@ header {
 	border-bottom: 3px solid #cecdcd;
 }
 
+.input-area:before {
+	display: table;
+	content: '';
+}
+
+.input-area:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
+.input-area p {
+	line-height: 37px;
+}
+
 p {
 	color: #cecdcd;
 }
@@ -74,6 +89,17 @@ button {
 .end {
 	background-color: #fff;
 	padding: 24px;	
+}
+
+.end:before {
+	display: table;
+	content: '';
+}
+
+.end:after {
+	display: table;
+	content: '';
+	clear: both;
 }
 
 
