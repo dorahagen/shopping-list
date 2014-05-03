@@ -19,7 +19,7 @@ header {
 
 .input-area {
 	background-color: #fff;
-	padding: 24px;
+	padding: 20px;
 	border-bottom: 3px solid #cecdcd;
 }
 
@@ -34,15 +34,25 @@ header {
 	clear: both;
 }
 
-.input-area p {
-	line-height: 37px;
+#entry {
+	font-family: Quicksand, sans-serif;
+	font-size: 1em;
+	color: #630657;
+	line-height: 32px;
+	border: 0;
+	width: 70%;
+}
+
+#entry:hover, #entry:focus {
+	outline: 0;
 }
 
 p {
 	color: #cecdcd;
 }
 
-button {
+.add, .clear {
+	cursor: pointer;
 	float: right;
 	font-size: 0.9em;
 	font-family: Quicksand, sans-serif;
@@ -53,36 +63,59 @@ button {
 	margin: 0;
 }
 
+li:before {
+	display: table;
+	content: '';
+}
+
+li:after {
+	display: table;
+	content: '';
+	clear: both;
+}
+
 .unchecked, .checked {
 	background-color: #f2f2f2;
-	padding: 24px;
+	padding: 20px;
+	line-height: 32px;
 	border-bottom: 1px solid #cecdcd;	
 }
 
-.unchecked {
+.box-unchecked {
+	cursor: pointer;
 	background-image: url('../images/box.jpg');
 	background-repeat: no-repeat;
-	background-position: 24px 50%;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 20px;
+}
+
+.box-checked {
+	cursor: pointer;
+	background-image: url('../images/box-checked.jpg');
+	background-repeat: no-repeat;
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 20px;
+}
+
+li {
+	color: #630657;
+	padding-left: 50px;
 }
 
 .checked {
-	background-image: url('../images/box-checked.jpg');
-	background-repeat: no-repeat;
-	background-position: 24px 50%;
-}
-
-.unchecked p {
-	color: #630657;
-	margin-left: 50px;
-}
-
-.checked p {
-	color: #630657;
 	text-decoration: line-through;
-	margin-left: 50px;
 }
 
-.x {
+.remove {
+	cursor: pointer;
+	background-image: url('../images/x.png');
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
 	float: right;
 }
 

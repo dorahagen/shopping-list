@@ -14,27 +14,27 @@
 		<img src="images/logo.png" class="logo" alt="Shopping List">
 	</header>
 	<div class="input-area">
-		<p>Add an item to list<button class="add">add to list</button></p>
+		<input type="text" id="entry" placeholder="Add an item to the list" maxlength="1000">
+		<input type="submit" class="add" value="add to list">
 	</div>
 	<div class="list-area">
-		<div class="unchecked">
-			<p>Item name<img src="images/x.png" class="x" alt="Remove"></p>
-		</div>
-		<div class="unchecked">
-			<p>Item name<img src="images/x.png" class="x" alt="Remove"></p>
-		</div>
-		<div class="checked">
-			<p>Item name<img src="images/x.png" class="x" alt="Remove"></p>
-		</div>
-		<div class="unchecked">
-			<p>Item name<img src="images/x.png" class="x" alt="Remove"></p>
-		</div>
-		<div class="checked">
-			<p>Item name<img src="images/x.png" class="x" alt="Remove"></p>
-		</div>
-		<div class="end">
-			<button class="clear">clear list</button>
-		</div>	
+		<ul id="list">
+			<li class="unchecked">
+				<div class="box-unchecked"></div>Item name<div class="remove"></div>
+			</li>
+			<li class="unchecked">
+				<div class="box-unchecked"></div>Item name<div class="remove"></div>
+			</li>
+			<li class="checked">
+				<div class="box-checked"></div>Item name<div class="remove"></div>
+			</li>
+			<li class="unchecked">
+				<div class="box-unchecked"></div>Item name<div class="remove"></div>
+			</li>
+		</ul>
+	</div>
+	<div class="end">
+		<button class="clear">clear list</button>
 	</div>	
 </body>
 </html>
