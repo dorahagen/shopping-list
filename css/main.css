@@ -32,7 +32,7 @@ header {
 	width: 70%;
 }
 
-#entry:hover, #entry:focus {
+#entry:hover, #entry:focus, .add:focus, .clear:focus {
 	outline: 0;
 }
 

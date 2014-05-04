@@ -30,8 +30,14 @@ $(document).ready(function() {
 
 	//cross off items
 	$('#list').on('click','li', function() {
-		$(this).toggleClass('.checked');
+		$(this).toggleClass('checked');
 	});
 
+	//clear entire list
+	function clearAll() {
+		$('li').remove();
+	}
+
+	$('.clear').on('click', clearAll);
 });
 
