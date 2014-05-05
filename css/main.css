@@ -70,6 +70,7 @@ p {
 .checked {
 	background-image: url('../images/box-checked.jpg');
 	text-decoration: line-through;
+	color: #adadad;
 }
 
 li {
